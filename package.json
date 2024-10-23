@@ -1,0 +1,27 @@
+{
+  "name": "classifier-back-office",
+  "version": "1.0.0",
+  "description": "Back office app for article classification workflow",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "PORT=6969 nodemon server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "The Aggregate 2024",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-validator": "^7.2.0",
+    "mongoose": "^8.7.0",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "axios": "^1.7.7",
+    "nodemon": "^3.1.7"
+  }
+}
