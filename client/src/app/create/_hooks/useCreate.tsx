@@ -2,9 +2,9 @@
 import { Block } from "@blocknote/core";
 import { useQueue } from "@/contexts/queue-context";
 import { useEffect, useState } from "react";
-import { LocalFields, defaultValues } from "../../types";
-import API from "../../../../../api";
-import { hasEmptyFields } from "../../helpers";
+import { LocalFields, defaultValues } from "../types";
+import API from "../../../../api";
+import { hasEmptyFields } from "../helpers";
 
 export default function useCreate() {
   const { queuedItems = [], removeItemFromQueue } = useQueue();

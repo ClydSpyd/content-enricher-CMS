@@ -7,7 +7,7 @@ import InputField from "@/components/input-field";
 import TagSelector from "@/components/tag-selector";
 import { useIsFirstRender } from "@/hooks/isFirstRender";
 import ConfirmModal from "./_components/confirm-modal";
-import useCreate from "./_components/_hooks/useCreate";
+import useCreate from "./_hooks/useCreate";
 
 const Queue = dynamic(() => import("./_components/queue"), { ssr: false });
 export default function CreatePage() {
